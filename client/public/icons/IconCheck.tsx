@@ -22,3 +22,5 @@ function IconCheck({ strokeColor = "black" }: {strokeColor?: string}) {
       
     )
 }
+
+export default IconCheck;

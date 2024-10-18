@@ -1,3 +1,4 @@
+import exp from "constants";
 import React from "react";
 
 function IconStopWatch({ strokeColor = "black" }: {strokeColor?: string}) {
@@ -22,3 +23,5 @@ function IconStopWatch({ strokeColor = "black" }: {strokeColor?: string}) {
 
     )
 }
+
+export default IconStopWatch;

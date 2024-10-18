@@ -22,3 +22,5 @@ function IconGrid({ strokeColor = "black" }: {strokeColor?: string}) {
 
     )
 }
+
+export default IconGrid;

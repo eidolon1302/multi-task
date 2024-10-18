@@ -42,3 +42,6 @@ form > img {
     transform: translateY(-50%);
 }
 
+.main-layout::-webkit-scrollbar {
+  width: 0;
+}

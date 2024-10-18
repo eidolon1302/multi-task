@@ -1,6 +1,9 @@
 "use client";
 import { useUserContext } from "@/context/userContext";
 import React from "react";
+import Link from "next/link";
+import { github, moon } from "@/utils/icons";
+import { profile } from "@/utils/icons";
 
 function Header() {
     const {user}= useUserContext();
@@ -24,10 +27,34 @@ function Header() {
                     )}
                 </p>
             </div>
+            {/* Right Header */}
             <div className="h-[50px] flex items-center gap-[10.4rem]">
                 <button className="px-8 py-3 bg-[#3aafae] text-white rounded-[50px] hover:bg-[#00A1F1] hover:text-white transition-all duration-200 ease-in-out">
                     Create a new Task
                 </button>
+                <div className="flex gap-4 items-center">
+                    <Link href="https://github.com/eidolon1302/multi-task"
+                        passHref
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="h-[40px] w-[40px] text-purple-500 rounded-full flex items-center justify-center text-lg border-2 border-[#E6E6E6]f">
+                            {github}
+                    </Link>
+                    <Link href="https://github.com/eidolon1302/multi-task"
+                        passHref
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="h-[40px] w-[40px] text-purple-500 rounded-full flex items-center justify-center text-lg border-2 border-[#E6E6E6]f">
+                            {moon}
+                    </Link>
+                    <Link href="https://github.com/eidolon1302/multi-task"
+                        passHref
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="h-[40px] w-[40px] text-purple-500 rounded-full flex items-center justify-center text-lg border-2 border-[#E6E6E6]f">
+                            {profile}
+                    </Link>
+                </div>
             </div>
         </header>
     )
